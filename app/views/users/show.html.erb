@@ -62,9 +62,9 @@
             <div class="card-content">
               <div class="media">
                 <div class="media-content">
-                  <%= link_to "詳細", recipe_path(recipe) %>
-                  <%= link_to "編集", edit_recipe_path(recipe) %>
-                  <%= link_to "削除", recipe_path(recipe), method: :delete, data: {confirm: "削除しますか？"} %>
+                  <%= link_to "詳細", recipe_path(recipe), class: "panel-block" %>
+                  <%= link_to "編集", edit_recipe_path(recipe), class: "panel-block" %>
+                  <%= link_to "削除", recipe_path(recipe), method: :delete, data: {confirm: "削除しますか？"} , class: "panel-block"%>
                 </div>
               </div>
               <div class="content">
