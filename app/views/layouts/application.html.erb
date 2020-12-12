@@ -38,7 +38,7 @@
     <% if user_signed_in? %>
       <div id="navbarExampleTransparentExample" class="navbar-menu">
         <div class="navbar-item">
-          <%= link_to "マイレシピ一覧", recipes_path, class: "navbar-item button is-warning is-light" %>
+          <%= link_to "レシピ一覧", recipes_path, class: "navbar-item button is-warning is-light" %>
         </div>
         <div class="navbar-item">
           <%= link_to "新規投稿", new_recipe_path, class: "navbar-item button is-warning is-light" %>
@@ -47,7 +47,7 @@
             <div class="navbar-item">
               <div class="field is-grouped">
                 <p class="control">
-                  <%= link_to "全ての投稿", users_path, class: "button is-warning is-light" %>
+                  <%= link_to "全てのユーザー", users_path, class: "button is-warning is-light" %>
                 </p>
                 <p class="control">
                   <%= link_to "マイページ", user_path(current_user), class: "button is-warning is-light" %>
@@ -62,10 +62,10 @@
     <% else %>
       <div id="navbarExampleTransparentExample" class="navbar-menu">
         <div class="navbar-item">
-          <%= link_to "マイレシピ一覧", recipes_path, class: "navbar-item button is-warning is-light" %>
+          <%= link_to "レシピ一覧", recipes_path, class: "navbar-item button is-warning is-light" %>
         </div>
         <div class="navbar-item">
-          <%= link_to "全ての投稿", users_path, class: "button is-warning is-light" %>
+          <%= link_to "全てのユーザー", users_path, class: "button is-warning is-light" %>
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
